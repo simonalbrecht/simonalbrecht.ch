@@ -1,0 +1,42 @@
+title = "Simon Albrecht"
+baseURL = "http://localhost:1313"
+
+buildDrafts = true
+buildExpired = true
+buildFuture = true
+cleanDestinationDir = false
+disableHugoGeneratorInject = false
+disableLiveReload = false
+
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
+staticDir = "static"
+themesDir = "themes"
+
+defaultContentLanguage = "en"
+languageCode = "en"
+languageName = "English"
+
+enableEmoji = true
+enableGitInfo = true
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+summaryLength = 80
+
+googleAnalytics = ""
+
+log = true
+watch = true
+
+relativeURLs = true
+uglyURLs = false
+minify = false
+
+paginate = 10
+paginatePath = "page"
+
+[permalinks]
+    posts = "/:year/:month/:slug/"
