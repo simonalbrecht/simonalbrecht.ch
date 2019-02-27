@@ -12,7 +12,7 @@ pip3 install Pygments
 ## Running locally
 
 ```bash
-hugo server
+hugo serve
 ```
 
 ## Building for production
@@ -23,7 +23,7 @@ hugo
 The generated site will be in the `public` folder.
 
 ## Configuration
-The configuration for the different environments can be found in `config`. The configuration for running locally is in the `config/_default` folder, the production config in `config/production`.
+The configuration for the different environments can be found in `config`. The configuration for running locally is in the `config/development` folder, the production config in `config/_default`.
 
 ## License
 This code is licensed under BSD-3-Clause. See [LICENSE](LICENSE) for more information.

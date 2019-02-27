@@ -1,12 +1,9 @@
-title = "Simon Albrecht"
-baseURL = "http://localhost:1313"
-
-buildDrafts = true
-buildExpired = true
-buildFuture = true
-cleanDestinationDir = false
+buildDrafts = false
+buildExpired = false
+buildFuture = false
+cleanDestinationDir = true
 disableHugoGeneratorInject = false
-disableLiveReload = false
+disableLiveReload = true
 
 contentDir = "content"
 dataDir = "data"
@@ -15,8 +12,8 @@ publishDir = "public"
 staticDir = "static"
 themesDir = "themes"
 
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "en-gb"
+languageCode = "en-gb"
 languageName = "English"
 
 enableEmoji = true
@@ -26,14 +23,12 @@ enableRobotsTXT = true
 
 summaryLength = 80
 
-googleAnalytics = ""
-
+googleAnalytics = "UA-135263577-1"
 log = true
-watch = true
+watch = false
 
 relativeURLs = true
-uglyURLs = false
-minify = false
+minify = true
 
 paginate = 10
 paginatePath = "page"

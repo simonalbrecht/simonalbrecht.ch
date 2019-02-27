@@ -1,0 +1,11 @@
+buildDrafts = true
+buildExpired = true
+buildFuture = true
+cleanDestinationDir = false
+disableHugoGeneratorInject = true
+disableLiveReload = false
+
+googleAnalytics = ""
+
+watch = true
+minify = false

@@ -1,0 +1,6 @@
+baseURL = "https://simonalbrecht.ch/"
+title = "Simon Albrecht"
+
+defaultContentLanguage = "en"
+languageCode = "en-gb"
+languageName = "English"
