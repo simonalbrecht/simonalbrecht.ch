@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: simonalbrecht/website
-  branch: redesign
+  branch: master
 
 publish_mode: editorial_workflow
 
