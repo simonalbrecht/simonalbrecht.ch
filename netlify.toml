@@ -2,11 +2,6 @@
     command = "npm run build"
     publish = "dist/"
 
-[[redirects]]
-  from = "/cv"
-  to = "https://simonalbrecht-public.s3.eu-central-1.amazonaws.com/cv/cv-simon-albrecht.pdf"
-  status = 301
-
 [[headers]]
   for = "/*"
   [headers.values]

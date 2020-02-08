@@ -11,6 +11,11 @@
             author,
             intro,
             content,
+            links {
+                icon,
+                title,
+                url
+            }
         }
     }
 </page-query>

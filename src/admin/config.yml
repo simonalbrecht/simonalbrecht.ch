@@ -5,8 +5,6 @@ backend:
 
 publish_mode: editorial_workflow
 
-site_url: https://simonalbrecht.ch
-display_url: https://simonalbrecht.ch
 media_folder: static/uploads
 public_folder: uploads
 
@@ -15,6 +13,7 @@ collections:
     label: 'Standalone Page'
     folder: 'content/pages'
     create: true
+    identifier_field: 'title'
     fields:
       - label: 'ID'
         name: 'id'
@@ -46,7 +45,20 @@ collections:
             widget: 'string'
           - label: 'Icon'
             name: 'icon'
-            widget: 'image'
-            allow_multiple: false
+            widget: 'select'
+            multiple: false
+            options:
+              - label: 'Github'
+                value: 'github'
+              - label: 'LinkedIn'
+                value: 'linkedin'
+              - label: 'Twitter'
+                value: 'twitter'
+              - label: 'Instagram'
+                value: 'instagram'
+              - label: 'Envelope'
+                value: 'envelope'
+              - label: 'Business Card'
+                value: 'business-card'
 
 
