@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   theme: {
     extend: {
@@ -7,9 +5,9 @@ module.exports = {
         dark: '#17181c',
         light: '#f5f6fa',
         accent: '#F79F1F',
-      }
+      },
     },
   },
   variants: {},
   plugins: [],
-}
+};

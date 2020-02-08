@@ -20,22 +20,22 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-135263577-1'
-      }
+        id: 'UA-135263577-1',
+      },
     },
     {
       use: 'gridsome-plugin-tailwindcss',
     },
     {
       use: 'gridsome-plugin-netlify-cms',
-    }
+    },
   ],
   templates: {
     Standalone: '/:id',
   },
 
   transformers: {
-    //Add markdown support to all file-system sources
+    // Add markdown support to all file-system sources
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
@@ -44,8 +44,6 @@ module.exports = {
   chainWebpack: config => {
     const svgRule = config.module.rule('svg');
     svgRule.uses.clear();
-    svgRule
-      .use('vue-svg-loader')
-      .loader('vue-svg-loader');
+    svgRule.use('vue-svg-loader').loader('vue-svg-loader');
   },
 };
