@@ -1,8 +1,0 @@
-{
-    "public": false,
-    "cleanUrls": true,
-    "redirects": [
-        { "source": "/cv", "destination": "https://simonalbrecht-public.s3.eu-central-1.amazonaws.com/cv/cv-simon-albrecht.pdf" },
-        { "source": "/linkedin", "destination": "https://www.linkedin.com/in/simonalbrecht/" }
-    ]
-}
