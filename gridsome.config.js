@@ -3,7 +3,6 @@ module.exports = {
   siteDescription: 'Simon Albrecht is a Zurich-based Full-Stack Software Engineer.',
   siteUrl: 'https://simonalbrecht.ch',
   titleTemplate: 'Simon Albrecht | %s',
-  outputDir: 'public',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
