@@ -1,7 +1,7 @@
 /* TEAM */
 
 Simon Albrecht
-- Location : Switzerland
+- Location : Zurich, Switzerland
 - Site     : https://simonalbrecht.ch
 - Twitter  : https://twitter.com/s_albrecht
 - Instagram: https://www.instagram.com/s_albrecht
@@ -13,13 +13,12 @@ Simon Albrecht
 
 Languages:
 - English
-- German
 
 Technologies:
 - Standards: HTML5, CSS3, JavaScript (ES6)
-- Software : Hugo
-- Tools    : VS Code
-- Hosting  : Amazon S3, CloudFlare
-- Code     : https://github.com/simonalbrecht/simonalbrecht.ch
+- Software : Vue.js, Gridsome
+- Tools    : IntelliJ Idea, Git
+- Hosting  : Zeit Now
+- Code     : https://github.com/simonalbrecht/website
 
 [The humans responsible & technology colophon](http://humanstxt.org/)

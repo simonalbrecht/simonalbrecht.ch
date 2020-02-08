@@ -1,0 +1,51 @@
+{
+  "name": "website",
+  "version": "2.0.0",
+  "description": "Simon Albrecht's Website",
+  "author": "Simon Albrecht <simon@simonalbrecht.ch>",
+  "private": true,
+  "scripts": {
+    "dev": "gridsome develop",
+    "build": "gridsome build",
+    "explore": "gridsome explore",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint::fix": "eslint --fix --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonalbrecht/website.git"
+  },
+  "keywords": [
+    "website",
+    "personal",
+    "homepage",
+    "about"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonalbrecht/website/issues"
+  },
+  "homepage": "https://simonalbrecht.ch",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "gridsome-plugin-tailwindcss": "^2.2.34",
+    "prettier": "1.19.1",
+    "vue-svg-loader": "^0.15.0"
+  },
+  "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
+    "gridsome": "^0.7.12",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.17"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
