@@ -1,9 +1,12 @@
 ---
 id: index
-title: Home
-intro: Hi there 👋,<br>I'm Simon Albrecht.
 author: Simon Albrecht
-published: true
+title: Home
+intro: "Hi there \U0001F44B,<br>I'm Simon Albrecht."
+links:
+  - icon: github
+    title: GitHub
+    url: 'https://github.com/simonalbrecht'
 ---
 
 I'm a Full-Stack Software Engineer based in Zurich, Switzerland.  
