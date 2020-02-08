@@ -257,3 +257,5 @@ $RECYCLE.BIN/
 /public
 /dist
 /src/.temp
+
+.now
