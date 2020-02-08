@@ -5,8 +5,9 @@
   "author": "Simon Albrecht <simon@simonalbrecht.ch>",
   "private": true,
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir public",
+    "dev": "gridsome develop",
+    "build": "gridsome build",
+    "explore": "gridsome explore",
     "lint": "eslint --ignore-path .gitignore .",
     "lint::fix": "eslint --fix --ignore-path .gitignore ."
   },
@@ -31,18 +32,17 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "1.19.1"
+    "gridsome-plugin-tailwindcss": "^2.2.34",
+    "prettier": "1.19.1",
+    "vue-svg-loader": "^0.15.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
-    "postcss-custom-properties": "^9.0.2",
-    "postcss-import": "^12.0.1",
-    "postcss-modules": "^1.5.0",
-    "postcss-nested": "^4.2.1",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.2.0"
+    "@gridsome/plugin-sitemap": "^0.2.3",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
+    "gridsome": "^0.7.12",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.17"
   },
   "browserslist": [
     "defaults"
