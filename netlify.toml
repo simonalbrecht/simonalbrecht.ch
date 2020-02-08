@@ -9,3 +9,18 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/.well-know/robots.txt"
+  status = 301
+
+[[redirects]]
+  from = "/humans.txt"
+  to = "/.well-know/humans.txt"
+  status = 301
+
+[[redirects]]
+  from = "/security.txt"
+  to = "/.well-know/security.txt"
+  status = 301
