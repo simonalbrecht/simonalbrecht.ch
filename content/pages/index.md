@@ -2,8 +2,7 @@
 id: index
 author: Simon Albrecht
 title: Home
-intro: >-
-        "Hi there 👋,<br>I'm Simon Albrecht."
+intro: Hi there 👋,<br>I'm Simon Albrecht.
 links:
   - icon: linkedin
     title: LinkedIn
