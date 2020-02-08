@@ -18,8 +18,17 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-135263577-1'
+      }
+    },
+    {
       use: 'gridsome-plugin-tailwindcss',
     },
+    {
+      use: 'gridsome-plugin-netlify-cms',
+    }
   ],
   templates: {
     Standalone: '/:id',

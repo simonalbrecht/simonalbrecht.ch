@@ -1,7 +1,9 @@
 backend:
-#  name: github
-#  repo: simonalbrecht/website
-  name: test-repo
+  name: github
+  repo: simonalbrecht/website
+  branch: redesign
+
+publish_mode: editorial_workflow
 
 site_url: https://simonalbrecht.ch
 display_url: https://simonalbrecht.ch
@@ -10,12 +12,22 @@ public_folder: uploads
 
 collections:
   - name: 'page'
-    label: 'Page'
-    folder: 'content'
+    label: 'Standalone Page'
+    folder: 'content/pages'
     create: true
     fields:
+      - label: 'ID'
+        name: 'id'
+        widget: 'string'
+      - label: 'Author'
+        name: 'author'
+        widget: 'string'
+        default: 'Simon Albrecht'
       - label: 'Title'
         name: 'title'
+        widget: 'markdown'
+      - label: 'Intro'
+        name: 'intro'
         widget: 'markdown'
       - label: 'Body'
         name: 'body'
