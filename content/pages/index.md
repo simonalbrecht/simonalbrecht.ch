@@ -4,9 +4,15 @@ author: Simon Albrecht
 title: Home
 intro: "Hi there \U0001F44B,<br>I'm Simon Albrecht."
 links:
+  - icon: linkedin
+    title: LinkedIn
+    url: 'https://www.linkedin.com/in/simonalbrecht/'
   - icon: github
     title: GitHub
     url: 'https://github.com/simonalbrecht'
+  - icon: envelope
+    title: E-Mail
+    url: 'mailto:simon@simonalbrecht.ch'
 ---
 
 I'm a Full-Stack Software Engineer based in Zurich, Switzerland.  
