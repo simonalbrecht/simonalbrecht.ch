@@ -6,3 +6,11 @@
   from = "/cv"
   to = "https://simonalbrecht-public.s3.eu-central-1.amazonaws.com/cv/cv-simon-albrecht.pdf"
   status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = "max-age=63072000; preload"
