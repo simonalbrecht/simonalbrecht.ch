@@ -18,7 +18,7 @@ Technologies:
 - Standards: HTML5, CSS3, JavaScript (ES6)
 - Software : Vue.js, Gridsome
 - Tools    : IntelliJ Idea, Git
-- Hosting  : Zeit Now
+- Hosting  : Netlify
 - Code     : https://github.com/simonalbrecht/website
 
 [The humans responsible & technology colophon](http://humanstxt.org/)
