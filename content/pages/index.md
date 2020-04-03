@@ -24,7 +24,7 @@ links:
     title: E-Mail
     url: 'mailto:simon@simonalbrecht.ch'
 ---
-I'm a Full-Stack Software Engineer based in Zurich, Switzerland.  
-Currently working as a Frontend Engineer building a Chatbot Platform at [aiaibot](https://www.aiaibot.com/).  
+I'm a Software Engineer based in Zurich, Switzerland.  
+Currently working as a Senior Software Engineer building a Chatbot Platform at [aiaibot](https://www.aiaibot.com/).  
 
 Previously I've built a Fund Management Engine at [UBS](https://www.ubs.com/), helped out other companies as a consultant at [mimacom](https://www.mimacom.com/), and enabled corporations to process their payments efficiently at [Fides](https://www.fides.ch/).
