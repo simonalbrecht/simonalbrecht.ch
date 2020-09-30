@@ -20,3 +20,9 @@ a:hover {
     @apply border-solid;
     @apply border-accent;
 }
+
+hr {
+    @apply border-accent;
+    @apply mt-8;
+    @apply mb-8;
+}
