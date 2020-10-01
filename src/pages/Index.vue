@@ -1,7 +1,7 @@
 <template>
-    <Layout>
-        <standalone-content :page="$page.page" />
-    </Layout>
+  <Layout>
+    <standalone-content :page="$page.page" />
+  </Layout>
 </template>
 
 <page-query>
@@ -21,19 +21,29 @@
 </page-query>
 
 <script>
-  import StandaloneContent from '~/components/StandaloneContent';
+import StandaloneContent from '~/components/StandaloneContent';
 
-  export default {
-    components: {
-      StandaloneContent,
-    },
-    metaInfo() {
-      return {
-        title: this.$page.page.title,
-        meta: [
-          { name: 'author', content: this.$page.page.author }
-        ],
-      }
-    }
-  }
+export default {
+  components: {
+    StandaloneContent,
+  },
+  metaInfo() {
+    return {
+      title: this.$page.page.title,
+      meta: [{ name: 'author', content: this.$page.page.author }],
+      link: [
+        {
+          href: 'https://assets.calendly.com/assets/external/widget.css',
+          rel: 'stylesheet',
+        },
+      ],
+      script: [
+        {
+          src: 'https://assets.calendly.com/assets/external/widget.js',
+          type: 'text/javascript',
+        },
+      ],
+    };
+  },
+};
 </script>

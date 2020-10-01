@@ -26,7 +26,7 @@ links:
 ---
 I'm a Software Engineer based in Zurich, Switzerland. 
 
-Due to restructuring at my current company, I'm looking for a new challenge starting January 1st, 2021! Interested? Schedule a call with me [here](https://calendly.com/simonalbrecht)!
+Due to restructuring at my current company, I'm looking for a new challenge starting January 1st, 2021! Interested? <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/simonalbrecht?background_color=17181c&text_color=e2e8f0&primary_color=f79f1f'});return false;">Schedule a call with me!</a>
 
 <hr>
 
