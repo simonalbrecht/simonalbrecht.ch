@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <header class="flex-auto" v-if="page.intro">
       <h1 class="font-bold text-3xl md:text-6xl" v-html="page.intro" />
     </header>
@@ -18,7 +18,7 @@
         <Icon class="h-6 md:h-6 w-auto fill-current" :name="link.icon" />
       </a>
     </footer>
-  </Layout>
+  </div>
 </template>
 
 <script>

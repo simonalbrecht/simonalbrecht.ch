@@ -8,7 +8,7 @@ export default function (Vue, { head }) {
   head.htmlAttrs = { lang: 'en' };
   head.bodyAttrs = {
     class:
-      'min-w-full min-h-full max-w-full w-screen h-screen bg-dark text-white font-sans antialised',
+      'min-w-full min-h-full max-w-full w-screen bg-dark text-white font-sans antialised',
   };
 
   head.link.push({
