@@ -26,10 +26,6 @@ links:
 ---
 I'm a Software Engineer based in Zurich, Switzerland. 
 
-Due to restructuring at my current company, I'm looking for a new challenge starting January 1st, 2021! Interested? <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/simonalbrecht?background_color=17181c&text_color=e2e8f0&primary_color=f79f1f'});return false;">Schedule a call with me!</a>
-
-<hr>
-
 At the moment, I'm working as a Senior Software Engineer building a Chatbot Platform at [aiaibot](https://www.aiaibot.com/).  
 
 Previously I've built a Fund Management Engine at [UBS](https://www.ubs.com/), helped out other companies as a consultant at [mimacom](https://www.mimacom.com/), and enabled corporations to process their payments efficiently at [Fides](https://www.fides.ch/).
