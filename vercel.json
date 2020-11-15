@@ -5,13 +5,14 @@
         "simonalbrecht.ch",
         "simonalbrecht"
     ],
-    "routes": [
+    "redirects": [
         {
-            "src": "/cv",
-            "status": 301,
-            "headers": {
-                "Location": "https://cdn.simonalbrecht.ch/file/simonalbrecht-public/cv/cv-simon-albrecht.pdf"
-            }
+            "source": "/cv",
+            "destination": "https://cdn.simonalbrecht.ch/file/simonalbrecht-public/cv/cv-simon-albrecht.pdf"
+        },
+        {
+            "source": "/view-source",
+            "destination": "https://github.com/simonalbrecht/website"
         }
     ]
 }
