@@ -21,10 +21,6 @@
       }
     },
     {
-      "src": "/de",
-      "continue": false
-    },
-    {
       "src": "/de/",
       "status": 308,
       "headers": {
@@ -33,10 +29,6 @@
     },
     {
       "src": "/de/(.*)",
-      "continue": false
-    },
-    {
-      "src": "/en",
       "continue": false
     },
     {
