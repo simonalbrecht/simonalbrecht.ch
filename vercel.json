@@ -26,13 +26,10 @@
     },
     {
       "src": "/de/",
-      "status": 308,
-      "headers": {
-        "Location": "/de"
-      }
+      "dest": "/de/index.html"
     },
     {
-      "src": "/de/(.*)",
+      "src": "/de/(.+)",
       "continue": false
     },
     {
@@ -41,13 +38,10 @@
     },
     {
       "src": "/en/",
-      "status": 308,
-      "headers": {
-        "Location": "/en"
-      }
+      "dest": "/en/index.html"
     },
     {
-      "src": "/en/(.*)",
+      "src": "/en/(.+)",
       "continue": false
     },
     {
