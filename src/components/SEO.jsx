@@ -15,12 +15,13 @@ const query = graphql`
   }
 `;
 
-const SEO = ({ title, lang, meta }) => {
+const SEO = ({ title, description, lang, meta }) => {
   const { site } = useStaticQuery(query);
+  const { metadata } = site
 
-  const defaultTitle = site.metadata.title;
-  const { description } = site.metadata;
-  const { author } = site.metadata;
+  const defaultTitle = metadata.title;
+  const metaDescription = description ? description : metadata.description
+  const metaAuthor = metadata.author
 
   return (
     <Helmet
@@ -38,11 +39,11 @@ const SEO = ({ title, lang, meta }) => {
         },
         {
           name: 'description',
-          content: description,
+          content: metaDescription,
         },
         {
           name: 'author',
-          content: author,
+          content: metaAuthor,
         },
       ].concat(meta)}
     />
@@ -51,12 +52,14 @@ const SEO = ({ title, lang, meta }) => {
 
 SEO.defaultProps = {
   title: '',
+  description: '',
   lang: 'en',
   meta: [],
 };
 
 SEO.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
 };
