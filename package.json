@@ -16,7 +16,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint --ignore-path .gitignore . --ext js --ext jsx",
-    "lint::fix": "npm run lint --fix"
+    "lint::fix": "npm run lint -- --fix"
   },
   "license": "0BSD",
   "dependencies": {
