@@ -1,3 +1,10 @@
+require('dotenv').config();
+
+const {
+  CONTENTFUL_ACCESS_TOKEN,
+  CONTENTFUL_SPACE_ID,
+} = process.env;
+
 const title = 'Simon Albrecht';
 
 module.exports = {
@@ -11,8 +18,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        accessToken: 'JPhCA0eLMNeoog1hk-iFLiJ4LaeMGb9b96sG8qJeLb8',
-        spaceId: 'ny19uu2xl2dl',
+        accessToken: CONTENTFUL_ACCESS_TOKEN,
+        spaceId: CONTENTFUL_SPACE_ID,
         downloadLocal: true,
       },
     },
