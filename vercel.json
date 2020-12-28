@@ -21,6 +21,14 @@
       }
     },
     {
+      "src": "/en/",
+      "dest": "/en/index.html"
+    },
+    {
+      "src": "/de/",
+      "dest": "/de/index.html"
+    },
+    {
       "handle": "filesystem"
     },
     {
