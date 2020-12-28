@@ -17,11 +17,11 @@ const query = graphql`
 
 const SEO = ({ title, description, lang, meta }) => {
   const { site } = useStaticQuery(query);
-  const { metadata } = site
+  const { metadata } = site;
 
   const defaultTitle = metadata.title;
-  const metaDescription = description ? description : metadata.description
-  const metaAuthor = metadata.author
+  const metaDescription = description ? description : metadata.description;
+  const metaAuthor = metadata.author;
 
   return (
     <Helmet
