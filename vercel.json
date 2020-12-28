@@ -5,7 +5,6 @@
     "simonalbrecht.ch",
     "simonalbrecht"
   ],
-  "trailingSlash": false,
   "routes": [
     {
       "src": "/cv",
