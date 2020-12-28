@@ -13,6 +13,32 @@
         {
             "source": "/view-source",
             "destination": "https://github.com/simonalbrecht/website"
+        },
+        {
+            "source": "/",
+            "destination": "/en/"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/de/(.*)",
+            "continue": true
+        },
+        {
+            "src": "/en/(.*)",
+            "continue": true
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/en/$1"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(.*)",
+            "status": 404,
+            "dest": "/404/"
         }
     ]
 }

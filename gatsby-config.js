@@ -1,9 +1,6 @@
 require('dotenv').config();
 
-const {
-  CONTENTFUL_ACCESS_TOKEN,
-  CONTENTFUL_SPACE_ID,
-} = process.env;
+const { CONTENTFUL_ACCESS_TOKEN, CONTENTFUL_SPACE_ID } = process.env;
 
 const title = 'Simon Albrecht';
 
@@ -11,8 +8,18 @@ module.exports = {
   siteMetadata: {
     title,
     author: 'Simon Albrecht',
-    description: 'Simon Albrecht is a Zurich-based Full-Stack Software Engineer.',
+    description: 'Simon Albrecht is a Software Engineer based in Zurich.',
     siteUrl: 'https://simonalbrecht.ch',
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'de'],
+      excludedPaths: ['/dev-404-page/'],
+      pathSlugMapping: {
+        '/': 'index',
+        '/404/': '404',
+      },
+      defaultSlug: 'index',
+    },
   },
   plugins: [
     {
@@ -58,5 +65,6 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     'gatsby-transformer-inline-svg-v2',
+    'gatsby-plugin-meta-redirect',
   ],
 };
