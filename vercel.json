@@ -5,7 +5,7 @@
     "simonalbrecht.ch",
     "simonalbrecht"
   ],
-  "trailingSlash": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/cv",
