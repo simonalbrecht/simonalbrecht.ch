@@ -21,37 +21,6 @@
       }
     },
     {
-      "src": "/de",
-      "dest": "/de/index.html"
-    },
-    {
-      "src": "/de/",
-      "dest": "/de/index.html"
-    },
-    {
-      "src": "/de/(.+)",
-      "continue": false
-    },
-    {
-      "src": "/en",
-      "dest": "/en/index.html"
-    },
-    {
-      "src": "/en/",
-      "dest": "/en/index.html"
-    },
-    {
-      "src": "/en/(.+)",
-      "continue": false
-    },
-    {
-      "src": "/",
-      "status": 308,
-      "headers": {
-        "Location": "/en"
-      }
-    },
-    {
       "handle": "filesystem"
     },
     {
