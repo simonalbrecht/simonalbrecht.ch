@@ -22,13 +22,9 @@
     },
     {
       "src": "/de",
-      "dest": "/de/"
-    },
-    {
-      "src": "/de/",
       "status": 308,
       "headers": {
-        "Location": "/de"
+        "Location": "/de/"
       }
     },
     {
@@ -36,10 +32,10 @@
       "continue": false
     },
     {
-      "src": "/en/",
+      "src": "/en",
       "status": 308,
       "headers": {
-        "Location": "/en"
+        "Location": "/en/"
       }
     },
     {
@@ -50,7 +46,7 @@
       "src": "/",
       "status": 308,
       "headers": {
-        "Location": "/en"
+        "Location": "/en/"
       }
     },
     {
