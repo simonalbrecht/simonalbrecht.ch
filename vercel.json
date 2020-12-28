@@ -5,21 +5,15 @@
         "simonalbrecht.ch",
         "simonalbrecht"
     ],
-    "redirects": [
-        {
-            "source": "/cv",
-            "destination": "https://cdn.simonalbrecht.ch/file/simonalbrecht-public/cv/cv-simon-albrecht.pdf"
-        },
-        {
-            "source": "/view-source",
-            "destination": "https://github.com/simonalbrecht/website"
-        },
-        {
-            "source": "/",
-            "destination": "/en/"
-        }
-    ],
     "routes": [
+        {
+            "src": "/cv",
+            "dest": "https://cdn.simonalbrecht.ch/file/simonalbrecht-public/cv/cv-simon-albrecht.pdf"
+        },
+        {
+            "src": "/view-source",
+            "dest": "https://github.com/simonalbrecht/website"
+        },
         {
             "src": "/de/(.*)",
             "continue": true
