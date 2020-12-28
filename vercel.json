@@ -44,13 +44,6 @@
       }
     },
     {
-      "src": "/(.*)",
-      "status": 308,
-      "headers": {
-        "Location": "/en/$1"
-      }
-    },
-    {
       "handle": "filesystem"
     },
     {
