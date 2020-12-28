@@ -25,12 +25,26 @@
       "continue": false
     },
     {
+      "src": "/de/",
+      "status": 308,
+      "headers": {
+        "Location": "/de"
+      }
+    },
+    {
       "src": "/de/(.*)",
       "continue": false
     },
     {
       "src": "/en",
       "continue": false
+    },
+    {
+      "src": "/en/",
+      "status": 308,
+      "headers": {
+        "Location": "/en"
+      }
     },
     {
       "src": "/en/(.*)",
