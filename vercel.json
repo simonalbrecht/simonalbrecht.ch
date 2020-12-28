@@ -21,7 +21,15 @@
       }
     },
     {
+      "src": "/de",
+      "continue": false
+    },
+    {
       "src": "/de/(.*)",
+      "continue": false
+    },
+    {
+      "src": "/en",
       "continue": false
     },
     {
