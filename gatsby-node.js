@@ -56,7 +56,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   const defaultLocalePath = `/${i18n.defaultLocale}${path}`;
   await createRedirect({
     fromPath: path,
-    toPath: `/${i18n.defaultLocale}${path}`,
+    toPath: defaultLocalePath,
     isPermanent: false,
     redirectInBrowser: isDev,
   });

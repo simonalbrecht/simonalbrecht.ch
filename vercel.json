@@ -6,7 +6,7 @@
     "simonalbrecht"
   ],
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "redirects": [
     {
       "source": "/cv",
@@ -26,7 +26,7 @@
     },
     {
       "source": "/",
-      "destination": "/en"
+      "destination": "/en/"
     }
   ]
 }
