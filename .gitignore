@@ -249,3 +249,5 @@ public
 
 .idea
 .env
+
+.vercel
