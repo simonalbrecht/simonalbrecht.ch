@@ -1,44 +1,47 @@
 {
-    "name": "website",
-    "scope": "simonalbrecht",
-    "alias": [
-        "simonalbrecht.ch",
-        "simonalbrecht"
-    ],
-    "routes": [
-        {
-            "src": "/cv",
-            "status": 308,
-            "headers": {
-                "Location": "https://cdn.simonalbrecht.ch/file/simonalbrecht-public/cv/cv-simon-albrecht.pdf"
-            }
-        },
-        {
-            "src": "/view-source",
-            "status": 308,
-            "headers": {
-                "Location": "https://github.com/simonalbrecht/website"
-            }
-        },
-        {
-            "src": "/de/(.*)",
-            "continue": false
-        },
-        {
-            "src": "/en/(.*)",
-            "continue": false
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/en/$1"
-        },
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "status": 404,
-            "dest": "/404/"
-        }
-    ]
+  "name": "website",
+  "scope": "simonalbrecht",
+  "alias": [
+    "simonalbrecht.ch",
+    "simonalbrecht"
+  ],
+  "routes": [
+    {
+      "src": "/cv",
+      "status": 308,
+      "headers": {
+        "Location": "https://cdn.simonalbrecht.ch/file/simonalbrecht-public/cv/cv-simon-albrecht.pdf"
+      }
+    },
+    {
+      "src": "/view-source",
+      "status": 308,
+      "headers": {
+        "Location": "https://github.com/simonalbrecht/website"
+      }
+    },
+    {
+      "src": "/de/(.*)",
+      "continue": false
+    },
+    {
+      "src": "/en/(.*)",
+      "continue": false
+    },
+    {
+      "src": "/(.*)",
+      "status": 302,
+      "headers": {
+        "Location": "/en/$1"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404/"
+    }
+  ]
 }
