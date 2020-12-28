@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+    height: 100%;
+}
+
+p {
+    @apply mb-4;
+}
+
+a {
+    @apply font-bold;
+    @apply border-solid;
+    @apply border-b-2;
+    @apply border-transparent;
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-300;
+}
+
+a:hover {
+    @apply border-solid;
+}
+
+@media (prefers-color-scheme: light) {
+    a {
+        @apply text-accent-dark;
+    }
+
+    a:hover {
+        @apply border-accent-dark;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        @apply text-accent-light;
+    }
+
+    a:hover {
+        @apply border-accent-light;
+    }
+}
