@@ -37,6 +37,13 @@
       "continue": false
     },
     {
+      "src": "/",
+      "status": 302,
+      "headers": {
+        "Location": "/en"
+      }
+    },
+    {
       "src": "/(.*)",
       "status": 302,
       "headers": {
