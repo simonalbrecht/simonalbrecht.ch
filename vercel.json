@@ -24,17 +24,33 @@
       "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     },
     {
+      "source": "/en/",
+      "destination": "/en"
+    },
+    {
+      "source": "/en/(.*)",
+      "destination": "/en/$1"
+    },
+    {
+      "source": "/de/",
+      "destination": "/de"
+    },
+    {
+      "source": "/de/(.*)",
+      "destination": "/de/$1"
+    },
+    {
       "source": "/",
-      "destination": "/en/"
+      "destination": "/en"
     }
   ],
   "rewrites": [
     {
-      "source": "/en/",
+      "source": "/en",
       "destination": "/en/index.html"
     },
     {
-      "source": "/de/",
+      "source": "/de",
       "destination": "/de/index.html"
     }
   ]
