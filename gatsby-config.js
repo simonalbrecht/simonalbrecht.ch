@@ -64,7 +64,6 @@ module.exports = {
       __key: 'images',
     },
     'gatsby-transformer-remark',
-    'gatsby-transformer-inline-svg-v2',
-    'gatsby-plugin-meta-redirect',
+    'gatsby-transformer-inline-svg-v2'
   ],
 };
