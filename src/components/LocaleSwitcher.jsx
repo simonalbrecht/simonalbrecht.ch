@@ -16,8 +16,8 @@ const LocaleSwitcher = ({ currentLocale = 'en', locales = [], switchLocale = () 
             'border-solid',
             'border-b-2',
             'border-transparent',
-            'hover:border-accent-light',
-            'hover:dark:border-accent-dark',
+            'hover:border-accent-dark',
+            'dark:hover:border-accent-light',
           ];
 
           if (isActive) {
