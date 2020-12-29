@@ -27,11 +27,18 @@ const Page = ({ intro, body, links = [] }) => {
 
       <footer className="flex flex-row mb-4">
         {links &&
-          links.map((link) => (
-            <ExternalLink title={link.title} url={link.url} key={link.title}>
-              <Icon title={link.title} svg={link.icon.file.svg.content} />
-            </ExternalLink>
-          ))}
+          links.map((link) => {
+            // There's a weird bug in Safari iOS where the icon will
+            // not render when link.title is passed in as is.
+            // Could not figure out why it happens, as the value is set and present
+            // but it just wont display the icon...
+            const title = JSON.stringify(link.title);
+            return (
+              <ExternalLink title={title} url={link.url} key={link.id}>
+                <Icon title={title} svg={link.icon.file.svg.content} />
+              </ExternalLink>
+            );
+          })}
       </footer>
     </div>
   );
