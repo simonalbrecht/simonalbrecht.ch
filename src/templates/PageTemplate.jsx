@@ -12,7 +12,7 @@ export const query = graphql`
       node_locale: { eq: $locale }
       description: { childMarkdownRemark: {} }
     ) {
-      id
+      id: contentful_id
       title
       intro {
         content: childMarkdownRemark {
@@ -25,6 +25,7 @@ export const query = graphql`
         }
       }
       links {
+        id: contentful_id
         url
         title
         icon {
