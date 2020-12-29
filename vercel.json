@@ -38,10 +38,12 @@
     {
       "source": "/de/(.*)",
       "destination": "/de/$1"
-    },
+    }
+  ],
+  "rewrites": [
     {
       "source": "/",
-      "destination": "/en"
+      "destination": "/api/redirect-browser-language"
     }
   ]
 }

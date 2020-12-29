@@ -6,5 +6,5 @@ module.exports = (req, res) => {
   const negotiator = new Negotiator(req);
   const language = negotiator.language(i18n.locales);
 
-  res.redirect(`/${language}`);
+  res.redirect(308, `/${language}`);
 };
