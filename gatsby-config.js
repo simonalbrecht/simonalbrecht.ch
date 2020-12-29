@@ -13,7 +13,7 @@ module.exports = {
     i18n: {
       defaultLocale: 'en',
       locales: ['en', 'de'],
-      excludedPaths: ['/dev-404-page/'],
+      excludedPaths: ['/dev-404-page/', '/offline-plugin-app-shell-fallback/'],
       pathSlugMapping: {
         '/': 'index',
         '/404/': '404',
@@ -64,6 +64,6 @@ module.exports = {
       __key: 'images',
     },
     'gatsby-transformer-remark',
-    'gatsby-transformer-inline-svg-v2'
+    'gatsby-transformer-inline-svg-v2',
   ],
 };

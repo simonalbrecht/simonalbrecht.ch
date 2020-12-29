@@ -6,6 +6,7 @@ const isDev = process.env.NODE_ENV === 'development';
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage, createRedirect } = actions;
   const path = page.path;
+  const strippedPath = path.replace(/\/$/, '');
 
   // Ignore excluded paths (eg. dev 404 page)
   if (i18n.excludedPaths.includes(path)) {
@@ -22,7 +23,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   // Create localised versions with template + context
   await Promise.all(
     i18n.locales.map(async (locale) => {
-      const localizedPath = `/${locale}${path}`;
+      const localizedPath = `/${locale}${strippedPath}`;
 
       // Map the URL path to the Contentful slug
       const slug = i18n.pathSlugMapping[path] || i18n.defaultSlug;
@@ -53,7 +54,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   );
 
   // Create fallback redirect to default locale
-  const defaultLocalePath = `/${i18n.defaultLocale}${path}`;
+  const defaultLocalePath = `/${i18n.defaultLocale}${strippedPath}`;
   await createRedirect({
     fromPath: path,
     toPath: defaultLocalePath,
