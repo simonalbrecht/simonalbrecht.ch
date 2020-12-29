@@ -1,6 +1,10 @@
 require('dotenv').config();
 
-const { CONTENTFUL_ACCESS_TOKEN, CONTENTFUL_SPACE_ID } = process.env;
+const {
+  CONTENTFUL_ACCESS_TOKEN,
+  CONTENTFUL_SPACE_ID,
+  CONTENTFUL_HOST = 'cdn.contentful.com',
+} = process.env;
 
 const title = 'Simon Albrecht';
 
@@ -27,6 +31,7 @@ module.exports = {
       options: {
         accessToken: CONTENTFUL_ACCESS_TOKEN,
         spaceId: CONTENTFUL_SPACE_ID,
+        host: CONTENTFUL_HOST,
         downloadLocal: true,
       },
     },
