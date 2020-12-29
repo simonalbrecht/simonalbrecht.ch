@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const SvgIcon = styled.svg`
-  display: inline;
+const IconWrapper = styled.div`
+  display: block;
   height: 1.5rem;
   width: 1.5rem;
   fill: currentColor;
@@ -14,9 +14,7 @@ const Icon = ({ title, svg }) => {
     __html: svg,
   };
   return (
-    <div className="h-6 md:h-6 w-auto fill-current">
-      <SvgIcon alt={title} className="" dangerouslySetInnerHTML={svgMarkup} />
-    </div>
+    <IconWrapper className="h-6 w-6 fill-current" alt={title} dangerouslySetInnerHTML={svgMarkup} />
   );
 };
 
